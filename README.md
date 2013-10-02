@@ -13,7 +13,6 @@ class Person extends bindable.Object
     
     virtual @, "friends", get: @_loadFriends
     
-    
   ###
   ###
   
