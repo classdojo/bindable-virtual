@@ -11,12 +11,12 @@ class Person extends bindable.Object
   constructor: (first, last) ->
     super { first: name, last: last }
     
-    virtual @, "friends", get: @_loadFriends
+    virtual @, "friends", get: @getFriends
     
   ###
   ###
   
-  _loadFriends: (next) =>
+  getFriends: (next) =>
     loadFriends @, next
 
 
