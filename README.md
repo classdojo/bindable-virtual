@@ -28,7 +28,6 @@ console.log person.get "friends"
 # triggers virtual field
 person.bind "friends", (friends) ->
 
-
 # bind to friends friends
 person.bind "friends.@each.friends.@each.first", (firstNames) ->  
   
